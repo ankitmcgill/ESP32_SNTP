@@ -3,6 +3,8 @@
 //
 // USES ESP32 SNTP (THAT USES ESP32 LWIP) TO GET NTP AND MAINTAIN
 // SYSTEM TIME BASED ON THAY
+//  
+// ESP32 SNTP ONLY SUPPORTS 1 NTP SERVER
 //
 // REFERENCE:
 //  (1) https://github.com/espressif/esp-idf/blob/master/examples/protocols/sntp/main/sntp_example_main.c
@@ -11,7 +13,7 @@
 //
 // ANKIT BHATNAGAR
 // ANKIT.BHATNAGARINDIA@GMAIL.COM
-//////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////
 
 #ifndef _ESP32_SNTP_
 #define _ESP32_SNTP_
@@ -23,6 +25,6 @@
 #define ESP32_SNTP_TAG         "ESP32:SNTP"
 
 void ESP32_WS2812B_SNTP_SetDebug(bool enable);
-void ESP32_SNTP_Initialize(void);
+void ESP32_SNTP_Initialize(char* ntp_server);
 
 #endif
