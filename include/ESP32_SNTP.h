@@ -33,7 +33,7 @@
 #define ESP32_SNTP_GET_TIME_RETRY_COUNT     (10)
 #define ESP32_SNTP_GET_TIME_RETRY_DELAY_MS  (1500)
 
-void ESP32_WS2812B_SNTP_SetDebug(bool enable);
+void ESP32_SNTP_SetDebug(bool enable);
 
 void ESP32_SNTP_Initialize(char* ntp_server);
 void ESP32_SNTP_SetTimeZone(char* tz_string);

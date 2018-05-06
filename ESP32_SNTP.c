@@ -32,7 +32,7 @@ char* s_ntp_server_name;
 
 //INTERNAL FUNCTIONS
 
-void ESP32_WS2812B_SNTP_SetDebug(bool enable)
+void ESP32_SNTP_SetDebug(bool enable)
 {
 	//SET MODULE DEBUG
 
